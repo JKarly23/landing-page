@@ -1,0 +1,366 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+button {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.5px);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: blueviolet;
+}
+
+button:hover {
+    background-color: rgb(88, 37, 136);
+}
+
+.container {
+    max-width: 95%;
+    margin: auto;
+}
+
+header {
+    background-color: rgba(245, 245, 245);
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    color: blueviolet;
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#button-hero {
+    margin-top: 55px;
+    font-size: 2em !important;
+    width: 100%;
+    height: auto;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    margin: 3.5px;
+    text-decoration: none;
+    padding: 5px 15px;
+    color: black;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: blueviolet;
+}
+
+#hero {
+    background-color: rgb(73, 72, 72);
+}
+
+#hero .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 90vh;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url(/media/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 2px 3px 25px gray;
+}
+
+#hero h1 {
+    color: white
+}
+
+#hero button {
+    font-size: 5vw;
+}
+
+#somos-proya {}
+
+#color-cambiado {
+    color: blueviolet;
+}
+
+#somos-proya .container {
+    padding: 200px 15px;
+    text-align: center;
+}
+
+#nuestros-programas {
+    background-color: rgb(44, 40, 40);
+    box-shadow: 2px 3px 25px gray;
+    color: white;
+}
+
+#nuestros-programas .container {
+    text-align: center;
+    padding: 100px 0;
+}
+
+#nuestros-programas .container h2 {
+    margin-top: 0;
+    font-size: 4em;
+}
+
+#nuestros-programas .programas .carta h3 {
+    font-size: 2em;
+}
+
+#nuestros-programas p {
+    display: none;
+}
+
+#nuestros-programas .carta {
+    box-shadow: 1.5px 2.5px 10px gray;
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 3%;
+}
+
+
+.carta:nth-child(1) {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(media/front-end-cropped.jpg);
+}
+
+.carta:nth-child(2) {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1.0)), url(media/full-stack.jpg);
+}
+
+.carta:nth-child(3) {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1.0)), url(media/python.jpg);
+}
+
+#caracteristicas .container {
+    text-align: center;
+    padding: 120px 12px;
+
+}
+
+#caracteristicas li {
+    margin: 16px 0;
+    font-weight: bold;
+}
+
+#aplica-ya .container {
+    width: 75%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    box-shadow: 2px 3px 25px gray;
+}
+
+#aplica-ya {
+    background-color: rgb(53, 49, 49)
+}
+
+#aplica-ya-button {
+    margin-top: 50px;
+    font-size: 2em !important;
+    width: 100%;
+    height: auto;
+
+
+}
+
+#aplica-ya h2 {
+    font-size: 5vw;
+}
+
+footer {
+    background-color: rgb(230, 230, 230);
+}
+
+footer p {
+    margin: 0;
+    color: rgb(100, 100, 100);
+    padding: 12px;
+}
+
+footer .container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media(min-width:820px) {
+    .container {
+        width: 75%;
+    }
+
+    header {
+        position: fixed;
+        width: 100%;
+        font-size:1.5em;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 2px;
+    }
+
+    #hero .container {
+        background-color: gainsboro;
+        width: 75%;
+        height:100vh;
+    }
+
+    #hero h1 {
+        font-size: 5em;
+    }
+
+    #somos-proya .container {
+        display: flex;
+        justify-content: space-evenly;
+        box-shadow:1.5px 2px -8px rgb(224, 220, 220);
+    }
+
+    #somos-proya .image-container {
+        background-image: url(media/somos-proya.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #somos-proya .texto {
+        width: 50%;
+        text-align: initial;
+        padding: 0 30px;
+        max-width: 600px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #somos-proya h2 {
+        margin-top: 0;
+    }
+    #nuestros-programas .programas {
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-programas p {
+        display: block;
+        margin-bottom: 140px;
+        position: relative;
+        top: 20%;
+        width: auto;
+        text-align: inherit;
+    }
+
+    #nuestros-programas h2 {
+        font-size: 5em;
+    }
+
+    #nuestros-programas .carta {
+        padding: 20px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(50, 50, 50, 0.5);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    #nuestros-programas h3 {
+        margin-top: 0;
+        font-size: 1.5em;
+    }
+
+
+    .carta:nth-child(1) {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(media/front-end-cropped.jpg);
+    }
+
+    .carta:nth-child(2) {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1.0)), url(media/full-stack-cropped.jpg);
+    }
+
+    .carta:nth-child(3) {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1.0)), url(media/python-cropped.jpg);
+    }
+    #aplica-ya .container{
+        height:70vh;
+        width:55%;
+    }
+    #caracteristicas{
+
+       margin:100px 0 125px 0;
+    }
+
+    #caracteristicas .container {
+        text-align: center;
+        padding: 120px 12px;
+        display:flex;
+        justify-content:space-evenly;
+        border:2.5px outset gray;
+        box-shadow:5.5px 5px 15px gray;
+    }
+    #caracteristicas ul{
+      margin-top:250px;
+    } 
+    #caracteristicas .image-caracteristicas{
+        background-image:url(media/background-2.jpeg);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 450px;
+        margin-top:100px;
+    }
+    footer .container{
+        justify-content:flex-end;
+    }
+}
